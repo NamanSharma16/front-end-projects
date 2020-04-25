@@ -1,1 +1,1 @@
-# front-end-projects
+# Coffee Lovers Project

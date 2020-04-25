@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <style>
-    a{
-      color: white;
-    }
-  </style>
-  </head>
-  <body>
+<html>
+<head>
+  <title>LogIn</title>
+  <link rel="stylesheet" href="css/coffee-style.css">
+</head>
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <header class = "nav">
+    <a href="index.html">
+      <button class = "nav-components">Welcome</button>
+    </a>
+    <a href="index.html">
+      <button class = "nav-components">Home</button>
+    </a>
+  </header>
 
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Welcome</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Landing Page</a>
-        </li>
+  <div class = "container">
+    
+    <div class = "main login">
+      <p class = "h1">Log In</p>
+      <p class = "h2">Enter your email and password below to log in to Coffee Lover</p>
+    </div> 
 
-      </ul>
-    </nav>
-    <div class="container">
-    <div class="jumbotron" style="margin-top: 20px">
-
-      <h1>Log In</h1>
-      <h3>Enter your email and password below to log in to Coffee Lover</h3>
+    <div class = "form-div">
+      <form>
+        <label for="email" class ="form-element" >Email address:</label><br>
+          <input type="text" name="email" placeholder="Enter email" class="form-element input-element"/>
+        <br>
+        
+        <label for="password" class="form-element">Password</label><br>
+          <input type="text" name="password" placeholder="Password" class="form-element input-element"/>
+        <br>
+         <input type="checkbox" name="check"/>
+        <label for="check" class="form-element">Keep me Logged In</label><br>
+        
+        <a href="#">
+          <button type="submit" class = "btn-submit">Submit</button> 
+        </a>
+      </form>
     </div>
 
-        <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Keep me Logged In</label>
-      </div>
-      <button type="submit" class="btn btn-outline-secondary">Submit</button>
-    </form>
+  </div>
 
-    </div>
-  </body>
+  <footer class = "nav">
+    
+    <p style="color:orange; align-content: center; margin-left: 555px; padding-top : 15px;">(c) Copyright My Coffee Project</p>
+  
+  </footer>
+
+
+</body>
 </html>
